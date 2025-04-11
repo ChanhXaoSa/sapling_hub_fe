@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import './output.css';
+import Header from './components/header';
+import HeroSection from './components/HeroSection';
+import ProductList from './components/ProductList';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Cửa hàng mầm cây</h1>
-        <p>Chào mừng bạn đến với thế giới cây xanh!</p>
-      </header>
-      <section>
-        <h2>Sản phẩm nổi bật</h2>
-        <div className="product">
-          <h3>Mầm cây xương rồng</h3>
-          <p>Giá: 50.000 VNĐ</p>
-        </div>
-        <div className="product">
-          <h3>Mầm cây sen đá</h3>
-          <p>Giá: 30.000 VNĐ</p>
-        </div>
-      </section>
+      <Header />
+      <HeroSection />
+      <ProductList />
+      <Footer />
     </div>
   );
 }
